@@ -1,0 +1,155 @@
+header {
+	background: #009688;
+}
+body {
+	background: #DFDFDF;
+}
+.panel {
+	background: #EEEEEE;
+	border: 1px solid #DDD;
+}
+.perfil {
+	display: inline;
+	width: 40px;
+}
+.perfil-icon {
+	display: inline;
+	float: right;
+	margin-top: 10px;
+} 
+.panel-heading {
+	margin: 0 !important;
+}
+/* ---------- BUSCAR ---------- */
+.busc {
+	border: 1px solid #DDD;
+	margin: -21px 0 !important;
+	background: white;
+}
+.buscar input {
+	margin: 5px;
+	border: none;
+	width: 90%;
+}
+input:hover {
+	border: none;
+}
+.buscar {
+	border: 1px solid #DFDFDF;
+    border-radius: 5px;
+    margin: 10px 2px;
+    width: 95%;
+}
+.search {
+	margin: 5px
+}
+/* --------------- CHATS ---------------*/
+.photo {
+	display: inline;
+	float: left;
+}
+.chat {
+	margin-left: 50px;
+}
+h5 {
+	display: inline;
+	color: black;
+	font-size: 15px;
+}
+.chat p {
+	color: #978F9D;
+	display: inline;
+	float: right;
+}
+.conv {
+	color: #978F9D;
+}
+.list-group {
+	padding: 0 !important;
+	margin-top: 20px;
+	overflow-y: auto;
+	max-height: calc(111vh - 211px);
+}
+/* --------------- CONVERSACION ---------------*/
+
+.dos a {
+	display: inline-block;
+	float: right;
+}
+.chat-dos {
+	display: inline-block;
+}
+.panel-body {
+	background-image: url("../image/chat-panel-bg.png");
+	background-color: #DDD;
+	padding: 15px;
+	margin-top: -35px;
+	border: 1px solid #DDD;
+	overflow-y: auto;
+	max-height: calc(110vh - 210px);
+}
+
+.conversacion span {
+	font-size: 25px;
+	vertical-align: middle;
+	color: #978F9D
+}
+.input-group {
+	width: 100% !important;
+}
+.conversacion {
+	width: 85%;
+	padding: 5px;
+}
+button {
+	background: transparent;
+	border: none;
+	color: #978F9D;
+	font-size: 25px;
+	margin: 0;
+	vertical-align: middle;
+}
+.msj-re, .msj-env {
+	width: 100%;
+}
+.msj-env {
+	padding-left: 75%;
+}
+.bg-white {
+	background: white;
+	padding: 10px;
+	margin: 1px;
+	border-radius: 5px;
+	width: 50%;
+}
+.bg-green {
+	background: #DCF8C6;
+	padding: 10px;
+	margin: 1px;
+	border-radius: 5px;
+	text-align: right;
+	width: 100%;
+}
+.text-blue {
+	color: #78CFF2;
+}
+.text-orange {
+	color: #F5B414;
+}
+.text-green {
+	color: #8DCF9F;
+}
+.text-pink {
+	color: #E859AC;
+}
+h6 {
+	text-align: right;
+	margin: 0;
+	color: #978F9D;
+}
+.panel-body p {
+	margin: 0
+}
+.panel-footer {
+	padding: 11px;
+}
