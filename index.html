@@ -12,6 +12,7 @@
 	  	<link rel="stylesheet" type="text/css" href="css/queries.css">
 	  	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
 	  	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+	  	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	</head>
 	<body>
 		<!-- <div class="bg-head"></div> -->
@@ -32,16 +33,8 @@
 				</div>
 				<div class="col-xs-12 col-md-8 panel dos">
 					<div class="panel-heading">
-						<div class="photo">
-					    	<img class="img-circle perfil" src="image/logocodeacademy.png">
-				    	</div>
-			    		<div class="chat chat-dos">
-					    	<div>
-						  		<h5>Laboratoria Perú</h5>
-					  		</div>
-					  		<div>
-					  			Ana María, Aldo, Glan, Mariana, Papu, Tú
-					  		</div>
+			    		<div class="chat-dos">
+					  		<h5 id="cajaNombre"><img id="foto" class="img-circle perfil" src="image/raymi.jpg"> Raymi Saldomando</h5>
 				  		</div>
 				  		<div class="perfil-icon icon-dos">
 							<button>
@@ -56,149 +49,73 @@
 			</div>
 		</header>
 		<section>
-		<!-- .................... BUSCAR .................... -->
 			<div class="container">
-				<div class="hidden-xs col-md-4 busc">
-					<div class="input-group buscar">
-						<span class="search icon-search"></span>
-						<input type="search" placeholder="Buscar o empezar un chat nuevo">
-					</div>
+				<div id="tarjetas" class="col-md-4 busc">
+					<table id="tabla" class="tabla">
+						<tr class="buscador buscar">
+							<td class="buscador">
+								<input type="text" id="tfBuscar" class="Buscador" placeholder="Buscar..." />
+							</td>
+						</tr>
+
+						<tr id="raymiSaldomando" class="list-group-item tarjeta">
+							<td>
+								<img class="img-circle perfil" src="image/raymi.jpg">
+								Raymi Saldomando
+							</td>
+						</tr>
+						<tr id="marianaCosta" class="list-group-item tarjeta">
+							<td>
+								<img class="img-circle perfil" src="image/mariana.jpg">
+								Mariana Costa
+							</td>
+						</tr>
+						<tr id="anaMaria" class="list-group-item tarjeta">
+							<td >
+								<img class="img-circle perfil" src="image/anamaria.jpg">
+								Ana Maria
+							</td>
+						</tr>
+						<tr id="rodulfoPrieto" class="list-group-item tarjeta">
+							<td>
+								<img class="img-circle perfil" src="image/rodulfo.jpg">
+								Rodulfo Prieto
+							</td>
+						</tr>
+						<tr id="andreaLamass" class="list-group-item tarjeta">
+							<td>
+								<img class="img-circle perfil" src="image/andrea.jpg">
+								Andrea Lamas
+							</td>
+						</tr>
+						<tr class="list-group-item tarjeta">
+							<td>
+								<img class="img-circle perfil" src="image/mariapaula.jpg">
+								Maria Paula
+							</td>
+						</tr>
+						<tr class="list-group-item tarjeta">
+							<td>
+								<img class="img-circle perfil" src="image/katy.jpg">
+								Katy Sanchez
+							</td>
+						</tr>
+						<tr class="list-group-item tarjeta">
+							<td>
+								<img class="img-circle perfil" src="image/aldo.jpg">
+								Aldo Alfaro
+							</td>
+						</tr>
+						<tr class="resultados">
+							<th><span class="resultados"></span></th>
+						</tr>
+					</table>
 				</div>
-			</div>
-		<!-- .................... CHATS .................... -->
-			<div class="container">
-			<div class="list-group hidden-xs col-md-4">
-			    <a href="" class="list-group-item">
-				    <div class="photo">
-				    	<img class="img-circle perfil" src="image/logocodeacademy.png">
-			    	</div>
-		    		<div class="chat">
-				    	<div>
-					  		<h5>Laboratoria Perú</h5>
-					  		<p>´14:25</p>
-				  		</div>
-				  		<div>
-				  			Aldo: Dale dale!
-				  		</div>
-			  		</div>
-			  	</a>
-			    <a href="#" class="list-group-item">
-			    	<div class="photo">
-			    		<img class="img-circle perfil" src="image/raymi.jpg">
-			    	</div>
-			    	<div class="chat">
-				    	<div>
-					  		<h5>Raymi Saldomando</h5>
-					  		<p>11:25</p>
-				  		</div>
-				  		<div>
-				  			La clase va bien!
-				  		</div>
-			  		</div>
-			    </a>
-			    <a href="#" class="list-group-item">
-			    	<div class="photo">
-			    		<img class="img-circle perfil" src="image/mariana.jpg">
-		    		</div>
-		    		<div class="chat">
-				    	<div>
-					  		<h5>Mariana Costa</h5>
-					  		<p>09:25</p>
-				  		</div>
-				  		<div>
-				  			El panel de speakers esta buenazo
-				  		</div>
-			  		</div>
-			  	</a>
-			    <a href="#" class="list-group-item">
-				    <div class="photo">
-						<img class="img-circle perfil" src="image/anamaria.jpg">
-					</div>
-					<div class="chat">
-				    	<div>
-					  		<h5>Ana María Martinez Franklin</h5>
-					  		<p>Ayer</p>
-				  		</div>
-				  		<div>
-				  			Pues dale chamo!
-				  		</div>
-			  		</div>
-			    </a>
-			    <a href="#" class="list-group-item">
-			    	<div class="photo">
-			    		<img class="img-circle perfil" src="image/rodulfo.jpg">
-			    	</div>
-			    	<div class="chat">
-				    	<div>
-					  		<h5>Rodulfo Prieto</h5>
-					  		<p>Martes</p>
-				  		</div>
-				  		<div>
-				  			¿Cómo van las chicas?
-				  		</div>
-			  		</div>
-			  	</a>
-			    <a href="#" class="list-group-item">
-				    <div class="photo">
-				    	<img class="img-circle perfil" src="image/andrea.jpg">
-			    	</div>
-			    	<div class="chat">
-				    	<div>
-					  		<h5>Andrea Lamas</h5>
-					  		<p>Lunes</p>
-				  		</div>
-				  		<div>
-				  			Hoy me toca clases de canto, yee!
-				  		</div>
-			  		</div>
-			    </a>
-			    <a href="#" class="list-group-item">
-			    	<div class="photo">
-			    		<img class="img-circle perfil" src="image/mariapaula.jpg">
-			    	</div>
-			    	<div class="chat">
-				    	<div>
-					  		<h5>Maria Paula Rivarola</h5>
-					  		<p>13/01/2016</p>
-				  		</div>
-				  		<div>
-				  			Wuju! esto me encanta!! en verdad!
-				  		</div>
-			  		</div>
-			    </a>
-			    <a href="#" class="list-group-item">
-			    	<div class="photo">
-			    		<img class="img-circle perfil" src="image/katy.jpg">
-			    	</div>
-			    	<div class="chat">
-				    	<div>
-					  		<h5>Katy Sanchez</h5>
-					  		<p>11/01/2016</p>
-				  		</div>
-				  		<div>
-				  			No te preocupes, tengo el salón bajo control
-				  		</div>
-			  		</div>
-			    </a>
-			    <a href="#" class="list-group-item">
-			    	<div class="photo">
-			    		<img class="img-circle perfil" src="image/aldo.jpg">
-			    	</div>
-			    	<div class="chat">
-				    	<div>
-					  		<h5>Aldo Alfaro</h5>
-					  		<p>03/01/2016</p>
-				  		</div>
-				  		<div>
-				  			Vas a comer?
-				  		</div>
-			  		</div>
-			    </a>
-		  	</div>
+			<!--</div>-->
 	  	<!-- .................... CONVERSACION .................... -->
-	  		<div class="container">
+	  		<!--<div class="container">-->
 				<div id="panel-body" class="col-xs-12 col-md-8 panel-body">
-					<div class="msj-re">
+					<!-- <div class="msj-re">
 						<div class="bg-white">
 							<p class="text-blue">Andrea Lamas</p>
 							<p>Chicos han visto el nuevo corte de Aldo?</p>
@@ -246,15 +163,21 @@
 							<p>Nunca!! Juan Diego es unico</p>
 							<h6>11:31</h6>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="panel-footer col-xs-12 col-md-8">
 					<div class="input-group">
-						<button type="button" class="text-left">
+						<button type="button" class="text-left dropdown-toggle" type="button" data-toggle="dropdown">
 							<span class="icon-insert_emoticon"></span>
 						</button>
+						<ul class="dropdown-menu">
+						    <li><a href="#"><i class="fa fa-smile-o"></i></a></li>
+						    <li><a href="#"><i class="fa fa-frown-o"></i></a></li>
+						    <li><a href="#"><i class="fa fa-meh-o"></i></a></li>
+					  	</ul>
+
 						<input type="text" id="inputMsj" class="conversacion" placeholder="Escribe tu mensaje aquí">
-						<button type="button" class="text-right" id="btn-enviar">
+						<button type="button" class="text-right" id="btnEnviar">
 							<span class="ion-android-send"></span>
 						</button>
 					</div>
@@ -264,6 +187,7 @@
 	<!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/moment.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
